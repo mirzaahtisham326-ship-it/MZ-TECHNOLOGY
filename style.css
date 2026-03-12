@@ -192,6 +192,20 @@ body {
 
 /* --- MOBILE VIEW (Max 640px ya 768px) --- */
 @media (max-width: 640px) {
+     .nav-container {
+            display: flex;
+            justify-content: center;
+            /* Logo ko horizontally center karega */
+            align-items: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    .logo {
+            margin: 0 auto;
+                display: flex;
+            justify-content: center;
+        }
+        
     .navbar .nav-container .cta-button-nav {
             display: none !important;
             visibility: hidden;
@@ -1607,4 +1621,5 @@ section.contact-section .sub-text {
     .heading-md {
         font-size: 2rem;
     }
+
 }
