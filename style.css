@@ -192,19 +192,33 @@ body {
 
 /* --- MOBILE VIEW (Max 640px ya 768px) --- */
 @media (max-width: 640px) {
-     .nav-container {
-            display: flex;
-            justify-content: center;
-            /* Logo ko horizontally center karega */
-            align-items: center;
-            padding: 10px 0;
-            width: 100%;
-        }
+    
+   .nav-container {
+        display: flex;
+        justify-content: center; /* Logo ko horizontally center karega */
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Logo div ko center karein */
     .logo {
-            margin: 0 auto;
-                display: flex;
-            justify-content: center;
-        }
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Logo image ka size mobile ke mutabiq adjust karein */
+    .nav-logo {
+        height: 70px; /* Aap isay apni pasand ke mutabiq 60px ya 80px kar sakte hain */
+        width: auto;
+    }
+
+    /* Navbar button ko hide rakhna (Jo humne pehle kiya tha) */
+    .cta-button-nav {
+        display: none !important;
+    }
+
         
     .navbar .nav-container .cta-button-nav {
             display: none !important;
@@ -1623,3 +1637,4 @@ section.contact-section .sub-text {
     }
 
 }
+
